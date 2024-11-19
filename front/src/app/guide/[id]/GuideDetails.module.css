@@ -1,0 +1,246 @@
+.container {
+    min-height: 100vh;
+    background: white;
+    color: #133115;
+    padding: 24px;
+    padding-top: 90px;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    color: #4caf50;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.backButton:hover {
+    color: #45a049;
+}
+
+.backIcon {
+    margin-right: 8px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    padding: 32px;
+    background-color: #f1f8e9;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.icon {
+    font-size: 56px;
+    color: #4caf50;
+}
+
+.metaInfo {
+    display: flex;
+    gap: 16px;
+    color: #666;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+}
+
+.metaIcon {
+    margin-right: 8px;
+    color: #4caf50;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #133115;
+}
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 32px;
+}
+
+.introduction {
+    margin-bottom: 48px;
+    color: #133115;
+}
+
+.introductionTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #133115;
+}
+
+.stepsList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.stepButton {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.stepButton:hover {
+    background-color: #f1f8e9;
+    border-color: #4caf50;
+}
+
+.stepTitle {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #133115;
+}
+
+.stepNumber {
+    width: 32px;
+    height: 32px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    color: white;
+}
+
+.stepContent {
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 8px;
+    padding: 24px;
+    color: #133115;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.keyPoints {
+    background: #f1f8e9;
+    padding: 32px;
+}
+
+.keyPointsTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    color: #133115;
+}
+
+.keyPointsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.keyPointItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    color: #133115;
+}
+
+.keyPointIcon {
+    margin-right: 12px;
+    flex-shrink: 0;
+    color: #4caf50;
+}
+
+.contactSection {
+    text-align: center;
+    margin-top: 48px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #133115;
+}
+
+.contactDescription {
+    margin-bottom: 24px;
+    color: #666;
+}
+
+.contactButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+.contactButton:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+
+    .cardHeader {
+        padding: 24px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .stepButton {
+        padding: 16px;
+    }
+
+    .keyPoints {
+        padding: 24px;
+    }
+}
