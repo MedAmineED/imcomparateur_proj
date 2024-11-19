@@ -24,8 +24,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/placeholder.svg?height=600&width=1200');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    var(--bg-image);
   background-size: cover;
   background-position: center;
   color: white;
@@ -63,17 +63,27 @@
 }
 .partnersRow{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
   border-bottom: 2px solid #45a049;
+  height: 100px;
 }
 .partnersWrapper {
   display: flex;
-  width: 100% !important;
-  justify-content: space-around;
-  align-items: center;
+  animation: scroll 20s linear infinite;
+  width: max-content !important;
+  gap: 40px;
+  padding: 0 20px;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .about {
   padding: 4rem 0;
   background-color: #f1f8e9;
@@ -194,11 +204,27 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 400px;
+    height: 60vh;
   }
 
   .slide {
     height: 400px;
+    padding: 1rem;
+  }
+
+  .slide h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .slide p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .primaryButton {
+    padding: 6px 18px !important;
+    font-size: 0.9rem !important;
   }
 
   .guides {
@@ -224,6 +250,33 @@
 
   .partnerLogo {
     max-width: 100px;
+  }
+
+  .partnersWrapper {
+    animation: scroll 15s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .slide {
+    height: 400px;
+  }
+
+  .slide h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .slide p {
+    font-size: 0.9rem !important;
+  }
+
+  .primaryButton {
+    padding: 5px 15px !important;
+    font-size: 0.8rem !important;
   }
 }
 

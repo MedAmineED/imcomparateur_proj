@@ -87,8 +87,13 @@ export default function Component() {
       <section className={styles.hero}>
         <CarouselCST carouselData={heroSlides} />
       </section>
-      <Row className={`${styles.partnersRow + " "}`} style={{ width: "100%", height: "100px", whiteSpace: "nowrap" }}>
+      <Row className={styles.partnersRow}>
         <div className={styles.partnersWrapper}>
+          <div><Image src="/images/visana.png" alt="Partner logo" width={100} height={40} priority /></div>
+          <div><Image src="/images/csslogo.png" alt="Partner logo" width={100} height={40} priority /></div>
+          <div><Image src="/images/alianz.png" alt="Partner logo" width={100} height={40} priority /></div>
+          <div><Image src="/images/baloise.png" alt="Partner logo" width={100} height={40} priority /></div>
+          <div><Image src="/images/zurich.png" alt="Partner logo" width={100} height={40} priority /></div>
           <div><Image src="/images/visana.png" alt="Partner logo" width={100} height={40} priority /></div>
           <div><Image src="/images/csslogo.png" alt="Partner logo" width={100} height={40} priority /></div>
           <div><Image src="/images/alianz.png" alt="Partner logo" width={100} height={40} priority /></div>
