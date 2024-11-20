@@ -4,12 +4,12 @@
   background: linear-gradient(135deg, #ffffff, #f8f9fa, #f1f8e9);
   color: #133115;
   min-height: 959px;
-  -webkit-font-smoothing: antialiased;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 20px;
 }
 
 /* Enhanced decorative elements with more balls */
@@ -127,12 +127,11 @@
 }
 
 .main {
-  padding: 70px 192px;
+  padding: 70px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 959px;
   position: relative;
   z-index: 2;
 }
@@ -155,7 +154,6 @@
   padding: 40px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
-  max-width: 440px;
   width: 100%;
   margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -322,4 +320,26 @@
   );
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+  
+  .main {
+    padding: 20px 0; /* Remove left/right padding, keep top/bottom */
+  }
+  
+  .card {
+    width: 100%;
+    margin: 0; /* Remove margin */
+    border-radius: 0; /* Optional: remove border radius for edge-to-edge look */
+  }
 }

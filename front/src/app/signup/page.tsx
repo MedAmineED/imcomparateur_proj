@@ -61,7 +61,8 @@ const Page: React.FC = () => {
                         layout="vertical" 
                         onFinish={onFinish}
                         onValuesChange={onValuesChange}
-                        >
+                        style={{ width: '100%' }}
+                    >
                         <Row gutter={[16, 16]}>
                             <Col xs={24} sm={12}>
                                 <Form.Item

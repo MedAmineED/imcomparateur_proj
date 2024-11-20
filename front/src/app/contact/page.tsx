@@ -23,7 +23,8 @@ const Page: React.FC = () => {
                     <Form 
                         onFinish={onFinish}
                         name="name" 
-                        layout="vertical"  // This sets the layout to vertical
+                        layout="vertical"
+                        style={{ width: '100%' }}
                     >
                         <Form.Item
                             name="name"
